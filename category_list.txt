@@ -1,0 +1,8 @@
+1, "Production & Business Activity"
+10, "Population, Employment, & Labor Markets"
+3008, "U.S. Regional Data"
+32263, "International Data"
+32455, "Prices"
+32991, "Money, Banking, & Finance"
+32992, "National Accounts"
+33060, "Academic Data"

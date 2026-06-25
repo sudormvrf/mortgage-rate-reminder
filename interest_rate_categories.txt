@@ -1,0 +1,103 @@
+This is the parent:
+22, "Interest Rates"
+
+These are the children:
+34009, "AMERIBOR Benchmark Rates"
+33058, "Automobile Loan Rates"
+51, "Bankers Acceptance Rate"
+121, "Certificates of Deposit"
+120, "Commercial Paper"
+32348, "Corporate Bonds"
+33059, "Credit Card Loan Rates"
+34005, "EONIA Rates"
+34007, "Euro Short-Term Rate"
+32298, "Eurodollar Deposits"
+118, "FRB Rates - discount, fed funds, primary credit"
+33056, "Interest Checking Accounts"
+33446, "Interest Rate Spreads"
+32299, "Interest Rate Swaps"
+32995, "Long-Term Securities"
+34242, "Monetary Policy"
+33055, "Money Market Accounts"
+114, "Mortgage Rates"
+33057, "Personal Loan Rates"
+117, "Prime Bank Loan Rate"
+33491, "Saving Accounts"
+34003, "SONIA Rates"
+116, "Treasury Bills"
+115, "Treasury Constant Maturity"
+82, "Treasury Inflation-Indexed Securities"
+
+This is the parent:
+15, "Exchange Rates"
+
+These are the children:
+94, "Daily Rates"
+95, "Monthly Rates"
+32219, "Annual Rates"
+105, "Trade-Weighted Indexes"
+158, "By Country"
+
+This is the parent:
+24, "Monetary Data"
+
+These are the children:
+124, "Monetary Base"
+123, "Reserves"
+25, "M1 and Components"
+29, "M2 and Components"
+96, "M2 Minus Small Time Deposits"
+28, "M3 and Components"
+30, "MZM"
+26, "Memorandum Items"
+32242, "Money Velocity"
+122, "Borrowings"
+32215, "Factors Affecting Reserve Balances"
+32218, "Securities, Loans, & Other Assets & Liabilities Held by Fed"
+
+This is the parent:
+46, "Financial Indicators"
+
+These are the children:
+32414, "Bond Market Indexes"
+33119, "Consumer Financial Conditions"
+32457, "Financial Activity Measures"
+32255, "Stock Market Indexes"
+32425, "Volatility Indexes"
+
+This is the parent:
+23, "Banking"
+
+These are the children:
+34078, "Banking Indexes"
+100, "Commercial Banking"
+83, "Condition of Banks"
+101, "Consumer Credit"
+32440, "Delinquencies and Delinquency Rates"
+33121, "Failures and Assistance Transactions"
+64, "8th District Banking Performance"
+33445, "Mortgage Debt Outstanding"
+32439, "Net Charge-Offs and Charge-Off Rates"
+99, "Securities & Investments"
+34111, "Senior Credit Officer Opinion Survey"
+32239, "Senior Loan Officer Survey"
+
+This is the parent:
+32360, "Business Lending"
+
+These are the children:
+32996, "Commercial Paper"
+32406, "Commercial and Industrial Loans by Time that Pricing Terms Were Set and by Commitment"
+33439, "Commercial and Industrial Loans Backed by Small Business Association"
+32361, "Commercial and Industrial Loans Made by All Commercial Banks"
+32370, "Commercial and Industrial Loans Made by Domestic Banks"
+32379, "Commercial and Industrial Loans Made by Large Domestic Banks"
+32388, "Commercial and Industrial Loans Made by Small Domestic Banks"
+32397, "Commercial and Industrial Loans Made by U.S. Branches and Agencies of Foreign Banks"
+33440, "Commercial and Industrial Loans Made Under Participation or Syndication"
+
+This is the parent:
+32145, "Foreign Exchange Intervention"
+
+These are the children:
+

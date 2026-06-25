@@ -1,0 +1,112 @@
+This is the parent:
+32991, "Money, Banking, & Finance"
+
+These are the children:
+22, "Interest Rates"
+15, "Exchange Rates"
+24, "Monetary Data"
+46, "Financial Indicators"
+23, "Banking"
+32360, "Business Lending"
+32145, "Foreign Exchange Intervention"
+
+This is the parent:
+10, "Population, Employment, & Labor Markets"
+
+These are the children:
+12, "Current Population Survey (Household Survey)"
+11, "Current Employment Statistics (Establishment Survey)"
+32250, "ADP Employment"
+33500, "Education"
+33001, "Income Distribution"
+32241, "Job Openings and Labor Turnover (JOLTS)"
+33509, "Labor Market Conditions"
+104, "Population"
+2, "Productivity & Costs"
+33831, "Minimum Wage"
+32240, "Weekly Initial Claims"
+33731, "Tax Data"
+
+This is the parent:
+32992, "National Accounts"
+
+These are the children:
+18, "National Income & Product Accounts"
+5, "Federal Government Debt"
+32251, "Flow of Funds"
+13, "U.S. Trade & International Transactions"
+
+This is the parent:
+1, "Production & Business Activity"
+
+These are the children:
+32262, "Business Cycle Expansions & Contractions"
+33936, "Business Surveys"
+32436, "Construction"
+33940, "Emissions"
+33955, "Expenditures"
+33490, "Finance Companies"
+32216, "Health Insurance"
+97, "Housing"
+3, "Industrial Production & Capacity Utilization"
+32429, "Manufacturing"
+33959, "Patents"
+6, "Retail Trade"
+33441, "Services"
+33492, "Technology"
+33202, "Transportation"
+33203, "Wholesale Trade"
+
+This is the parent:
+32455, "Prices"
+
+These are the children:
+32217, "Commodities"
+9, "Consumer Price Indexes (CPI and PCE)"
+33913, "Cryptocurrencies"
+4, "Employment Cost Index"
+33717, "Health Care Indexes"
+32261, "House Price Indexes"
+31, "Producer Price Indexes (PPI)"
+32220, "Trade Indexes"
+
+This is the parent:
+32263, "International Data"
+
+These are the children:
+32264, "Countries"
+32955, "Geography"
+32265, "Indicators"
+32956, "Institutions"
+
+This is the parent:
+3008, "U.S. Regional Data"
+
+These are the children:
+27281, "States"
+32043, "Census Regions"
+32061, "BEA Regions"
+32849, "BLS Regions"
+32071, "Federal Reserve Districts"
+32233, "Freddie Mac Regions"
+
+This is the parent:
+33060, "Academic Data"
+
+These are the children:
+33833, "Banking and Monetary Statistics, 1914-1941"
+33951, "Daily Federal Funds Rate, 1928-54"
+33825, "Data on the nominal term structure model from Kim and Wright"
+33201, "Economic Policy Uncertainty"
+33891, "Historical Federal Reserve Data"
+33839, "A Millennium of Macroeconomic Data for the UK"
+33061, "NBER Macrohistory Database"
+33934, "New England Textile Industry, 1815-1860"
+33100, "Penn World Table 7.1"
+33402, "Penn World Table 11.0"
+33120, "Recession Probabilities"
+33442, "Sticky Wages and Comovement"
+34000, "The Effects of the 1930s HOLC "Redlining" Maps"
+34309, "U.S. Survey of Working Arrangements and Attitudes"
+33123, "Weekly U.S. and State Bond Prices, 1855-1865"
+
