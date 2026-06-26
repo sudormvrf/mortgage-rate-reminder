@@ -1,5 +1,5 @@
 import csv
-from datetime import date
+from datetime import date, timedelta
 
 def read_series_csv(filename):
     with open(filename, newline="") as f:
@@ -26,11 +26,20 @@ def parse_rows(rows):
 def sample_parsed(parsed, since):
      return [(d, v) for (d, v) in parsed if d >= since]
 
+def get_latest_rate(filename):
+    rows = read_series_csv(filename)
+    parsed_rows = parse_rows(rows)
+    return parsed_rows[-1]
 
 if __name__ == "__main__":
-    rows = read_series_csv("./mortgage30us.csv")
-    print_some_data(rows)
-    parsed_rows = parse_rows(rows)
-    sample = sample_parsed(parsed_rows, date(2026, 4, 1))
-    print(f"Last two months: {len(sample)} rows")
-    pass
+    recent_date, recent_rate = get_latest_rate("./mortgage30us.csv")
+    today_date = date.today()
+    diff = today_date - recent_date
+    if diff.days == 0:
+        print(f"The mortgage rate data updated today, on {recent_date.strftime("%a, %b %d")}. It is at {recent_rate}%.")
+    elif diff.days == 1:
+        print(f"The mortgage rate data updated yesterday on {recent_date.strftime("%B %dth, %Y")}. It was at {recent_rate}%.")
+    else:
+        print(f"The morgage rate date published {diff.days} days ago. It was at {recent_rate}%.")
+    #sample = sample_parsed(parsed_rows, date(2026, 4, 1))
+    #print(f"Last two months: {len(sample)} rows")

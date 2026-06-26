@@ -2,6 +2,7 @@ import requests
 import time
 import csv
 import config
+from datetime import date, timedelta
 
 API_KEY = config.fred_api_key
 BASE_URL = "https://api.stlouisfed.org/fred"
@@ -94,7 +95,49 @@ def print_series_in_category(category_id):
 def print_series_observations(series_id, start):
     for obs in get_series_observations(series_id, start):
         print(f"{obs['date']} {obs['value']}")
+
+def update_series_csv(series_id, filename):
+
+    # Read existing data into a dict keyed by date
+    existing = {}
+    try:
+        with open(filename, newline="") as f:
+            for row in csv.DictReader(f):
+                existing[row["date"]] = row["value"]
+    except FileNotFoundError:
+        pass
+
+    # Decide where to start the fetch
+    if existing:
+        print(f"CSV previously had {len(existing)} observations")
+        last_date = max(existing.keys())
+        start = (date.fromisoformat(last_date) - timedelta(days=30)).isoformat()
+        print(f"Fetching from {start}")
+    else:
+        print("No existing CSV found, fetching full history")
+        start = None
+
+    # Fetch from FRED
+    new_obs = get_series_observations(series_id, start=start)
+
+    # Merge Data
+    before_count = len(existing)
+    for obs in new_obs:
+        existing[obs["date"]] = obs["value"]
+    added = len(existing) - before_count
+    print(f"Added {added} new observations: ({len(new_obs)} fetched, {len(new_obs) - added} were revised)")
+
+    # Write everything back out
+    with open(filename, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["date", "value"])
+        for date_str in sorted(existing.keys()):
+            w.writerow([date_str, existing[date_str]])
+
+    return len(existing)
+
         
 if __name__ == "__main__":
-    write_series_csv("MORTGAGE30US", "mortgage30us.csv")
-    pass
+    #write_series_csv("MORTGAGE30US", "mortgage30us.csv")
+    n = update_series_csv("MORTGAGE30US", "mortgage30us.csv")
+    print(f"CSV now has {n} observations")
